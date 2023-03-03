@@ -22,4 +22,13 @@ public class PalindromeNumber{
         }
         return true;
     }
+
+    /*
+    https://leetcode.com/problems/palindrome-number/solutions/3242162/c-java-python3-solutions-90-99-faster/?languageTags=csharp
+    */
+    
+
+    /*
+    https://leetcode.com/problems/palindrome-number/solutions/3188691/c-without-converting-to-string-simple-solution-92/?languageTags=csharp
+    */
 }
