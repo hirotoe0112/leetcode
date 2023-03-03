@@ -11,7 +11,9 @@ public class PalindromeNumber{
         // 2, 5-1-2 : このときi = x.length - 1 - i このときはチェックしない
         var checkLength = chars.Length % 2 == 0 ? chars.Length / 2 : chars.Length / 2 + 1;
         Console.WriteLine($"checkLength={checkLength}");
-        for(var i = 0; i <= checkLength; i++){
+        // ここはi < checkLengthが正しいと思うけど=を外すと所要時間が増える。。。なぜ？
+        //for(var i = 0; i <= checkLength; i++){
+        for(var i = 0; i < checkLength; i++){
             // 比較するペアが存在しなくなった場合(数値の真ん中まできた場合)は終了
             if(i == chars.Length - 1 - i){
                 return true;
