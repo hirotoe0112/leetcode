@@ -35,6 +35,22 @@ public class TwoSum{
     */
 
     // マイナスもありうるのでこれはダメ
+    /*
+    そもそも、Arrayは内部的にはforループで値を探している。
+    https://referencesource.microsoft.com/#mscorlib/system/array.cs,589c48d63edd374e,references
+    if (value == null) {
+        for (int i = startIndex; i < endIndex; i++) {
+            if (objArray[i] == null) return i;
+        }
+    }
+    else {
+        for (int i = startIndex; i < endIndex; i++) {
+            Object obj = objArray[i];
+            if (obj != null && obj.Equals(value)) return i;
+        }
+    }
+    なので見た目上1行で処理できるからといって、Array.IndexOfを使えば良いということではない。
+    */
     public int[] Run2(int[] nums, int target){
         var answer = new int[2];
         for(var i = 0; i < nums.Length - 1; i++){
