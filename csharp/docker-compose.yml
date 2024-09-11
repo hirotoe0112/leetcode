@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  leetcode:
+    build:
+      dockerfile: ./Dockerfile
+    volumes:
+      - ./src:/src
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    tty: true
