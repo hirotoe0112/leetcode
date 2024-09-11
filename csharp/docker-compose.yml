@@ -5,7 +5,7 @@ services:
     build:
       dockerfile: ./Dockerfile
     volumes:
-      - ./src:/src
+      - ./src:/usr/src
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
     tty: true
