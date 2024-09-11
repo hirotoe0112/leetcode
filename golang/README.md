@@ -11,7 +11,7 @@ docker exec -it CONTAINER_ID //bin/bash
 ## 実行
 ```
 go run test.go
-go run add-two-integers_2235.go -num1=1 -num2=2
+go run no_2235_add-two-integers.go -num1=1 -num2=2
 
 go build test.go
 go run ./test
