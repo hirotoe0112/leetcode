@@ -10,7 +10,7 @@ docker exec -it CONTAINER_ID //bin/bash
 
 ## 実行
 ```
-dotnet run
+go run test.go
 ```
 
 ## dockerを抜ける
