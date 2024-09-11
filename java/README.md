@@ -12,6 +12,7 @@ docker exec -it CONTAINER_ID //bin/bash
 ```
 javac Hello.java
 java Hello
+java No2235AddTwoIntegers 111 224
 
 javac -classpath ../lib Hello.java
 java -classpath ../lib Hello
