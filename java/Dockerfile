@@ -1,2 +1,2 @@
-FROM openjdk:11-slim
+FROM eclipse-temurin:25
 WORKDIR /usr/src
