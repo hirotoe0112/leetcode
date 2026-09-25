@@ -25,3 +25,7 @@ class Solution {
         return result;
     }
 }
+
+/**
+ * 'A' - 'A' で 65 - 65 = 0になるらしい。これを使えばcharsの定義が不要になる。
+ */
